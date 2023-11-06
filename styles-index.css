@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: sans-serif;
+
+  background: linear-gradient(to bottom, #ffffff00, #173529),
+    url(/mc2yi1zlish31.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+  background-color: #173529;
+  width: 100%;
+}
+
+
+
+.container-all {
+}
+
+.ul-navbar {
+  display: flex;
+  list-style: none;
+
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.ul-navbar a {
+  font-size: 20px;
+
+  font-family: sans-serif;
+  text-decoration: none;
+
+  margin-left: 25px;
+  color: #494747;
+}
+
+.ul-navbar a:hover {
+  color: #3c7262;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+
+  width: 50px;
+  display: flex;
+}
+
+.profile {
+  width: 45px;
+  position: absolute;
+
+  top: 20px;
+  right: 70px;
+  left: auto;
+}
+
+/* navbar kanan */
+.navbar-kanan {
+  margin-left: auto;
+  margin-right: 75px;
+}
+
+.ul-navbar-kanan {
+  list-style: none;
+  display: flex;
+}
+
+.point a {
+  font-family: fantasy;
+  font-size: 20px;
+
+  color: orangered;
+}
+
+.point a:hover {
+  color: rgb(70, 100, 29);
+}
+
+/* content */
+
+.container-content {
+}
+
+.container-content h1 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: roboto condensed;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.paragraph-1 {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Learn More */
+
+.button {
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  padding: 10px;
+  border: 3px solid whitesmoke;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 200px;
+  margin-top: 75px;
+}
+.button::before,
+.button::after {
+  content: " ";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: all 0.5s;
+}
+.button::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+.button::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+.button:hover::before,
+.button:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
+}
+
+/* button end */
+
+/* SELAMATKAN BUMI KITA */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+.wrapper {
+  position: relative;
+  margin-top: 200px;
+  height: 540px;
+  width: 63.1%;
+  perspective: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+
+  background-color: rgba(211, 255, 211, 0.349);
+}
+.wrapper .flip-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #173529;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+.wrapper:hover .flip-card {
+  transform: rotateY(180deg);
+}
+.flip-card .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #173529;
+  border-top: 2px solid #173529;
+  border-left: 2px solid #173529;
+  box-shadow: 0 5px 10px #173529;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.card span.circle,
+.card span.square {
+  height: 110px;
+  width: 110px;
+  border: 10px solid rgba(211, 255, 211, 0.349);
+}
+.card span.circle {
+  border-radius: 50%;
+}
+.card span.triangle {
+  position: relative;
+  height: 0;
+  width: 0;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-bottom: 110px solid rgba(211, 255, 211, 0.349);
+  margin-right: 16px;
+}
+.card span.triangle::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: -40px;
+  top: 20px;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-bottom: 80px solid #173529;
+}
+.back.card {
+  transform: rotateY(180deg);
+}
+
+/* end */
+
+/* stats */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.counter-up {
+  background: url("images/bg-2.jpeg") no-repeat;
+  min-height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.counter-up::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+.counter-up .content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter-up .content .box {
+  width: calc(25% - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+}
+.content .box .icon {
+  font-size: 48px;
+  color: #e6e6e6;
+}
+.content .box .counter {
+  font-size: 50px;
+  font-weight: 500;
+  color: #f2f2f2;
+  font-family: sans-serif;
+}
+.content .box .text {
+  font-weight: 400;
+  color: #ccc;
+}
+@media screen and (max-width: 1036px) {
+  .counter-up {
+    padding: 50px 50px 0 50px;
+  }
+  .counter-up .content .box {
+    width: calc(50% - 30px);
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .counter-up .content .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 20px;
+  }
+  .counter-up {
+    padding: 30px 20px 0 20px;
+  }
+}
+
+/* end */
+
+/* cards */
+.container-card {
+  background-color: #ccc;
+  width: 88.8%;
+  height: 600px;
+
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+.tes-container {
+  display: flex;
+  height: 200px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.tes {
+  border-radius: 20px;
+
+  background-color: #ccc;;
+  height: 700px;
+  width: 44%;
+  margin: 15px;
+  padding: 10px;
+
+}
+
+.tes-container-small {
+  display: flex;
+  height: 200px;
+  padding: 10px;
+  justify-content: center;
+
+  margin-top: 520px;
+}
+
+.tes-small {
+  border-radius: 20px;
+
+  background-color: #ccc;;
+  height: 700px;
+  width: 28.7%;
+  margin: 15px;
+  padding: 10px;
+}
+
+/* end */
+
+/* footer */
+.footer {
+  margin-top: 700px;
+  height: 200px;
+  background-color: black;
+}
+
+.footer p {
+  color: white;
+
+  font-family: fantasy;
+  font-size: 25px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .container-content {
+  background-color: #a3b18a;
+
+  height: 700px;
+  width: 1800px;
+
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.container-content p {
+  height: 500px;
+  width: 700px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* responsive */
+/* navbar */
+
+/* New styles for screens with a max width of 767px (hamburger menu) */
+@media (max-width: 767.5px) {
+  .ul-navbar {
+    flex-direction: column; /* Stack the menu items vertically */
+    align-items: center; /* Center-align the items */
+    text-align: center; /* Center-align the text */
+    background-color: #333; /* Add a background color for the menu */
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 0px;
+    top: 40px;
+    left: 0px;
+    width: 40%; /* 1/3 of screen width */
+    height: 100%; /* Occupies the full height of the screen */
+    z-index: 1; /* Make sure the menu appears above other content */
+    display: none; /* Initially hide the menu */
+  }
+
+  .ul-navbar.show {
+    display: flex; /* Show the menu when the "show" class is applied */
+  }
+
+  .ul-navbar a {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #fff; /* White text color for the menu items */
+    margin-bottom: 20px; /* Add vertical spacing between menu items */
+  }
+
+  .ul-navbar li {
+    margin-top: 30px; /* Add margin to the bottom of each list item (menu item) */
+  }
+
+  .logo,
+  .profile {
+    display: none; /* Hide the logo and profile in this mode */
+  }
+
+  .navbar-kanan {
+    display: none; /* Hide the right-side content */
+  }
+}
+
+/* Hamburger button styles */
+.hamburger {
+  display: none; /* Initially hide the button */
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  margin-top: 0px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  display: flexbox;
+}
+
+/* Display the button on screens with a max width of 767px */
+@media (max-width: 767.5px) {
+  .hamburger {
+    display: block;
+  }
+}

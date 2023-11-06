@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles-index.css" />
+    <!-- stats -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- card -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="container-navbar">
+      <ul class="ul-navbar">
+        <li>
+          <a href=" "><img src="/logo.png" alt="" class="logo" /></a>
+        </li>
+        <li><a href="/greening.html">Greening</a></li>
+        <li><a href="/documentation.html">Documentation</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="">Help</a></li>
+        <li>
+          <a href="/login.html"><img src="/127680259-modified.png" alt="" class="profile" /></a>
+        </li>
+
+        <div class="navbar-kanan">
+          <ul class="ul-navbar-kanan">
+            <li class="point"><a href="">Point</a></li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+
+    <!-- hamburgere -->
+    <!-- Hamburger button -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- content -->
+
+    <div class="container-content">
+      <h1>Restore Forests. Do good for the earth.</h1>
+
+      <p class="paragraph-1">
+        Lembaga Non-Profit Yang Didirikan Oleh Himpunan Pemuda Pecinta Alam
+      </p>
+
+      <a href="#" class="button">Learn more</a>
+    </div>
+
+    <!-- stats -->
+    <div class="counter-up">
+      <div class="content">
+        <div class="box">
+          <div class="icon"><i class="fas fa-history"></i></div>
+          <div class="counter">724</div>
+          <div class="text">Forrest Being Planted</div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-gift"></i></div>
+          <div class="counter">508</div>
+          <div class="text">Completed Projects</div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <div class="counter">436</div>
+          <div class="text">Donatur</div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-award"></i></div>
+          <div class="counter">120</div>
+          <div class="text">Planted Forrest</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- selamatkan bumi kita -->
+    <div class="wrapper">
+      <div class="flip-card">
+        <div class="front card">
+          <span class="circle"></span>
+          <span class="triangle"></span>
+          <span class="square"></span>
+        </div>
+        <div class="back card">
+          <span class="num">
+            <iframe
+              width="960"
+              height="540"
+              src="https://www.youtube.com/embed/8iFbcCXNTjA"
+              title="Every tree has a story to tell... - Greenpeace"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <!-- card -->
+    <div class="container-card">
+      <p>Bromo.</p>
+      <h1>
+        Bantu Bromo Agar <br />
+        hijau kembali
+      </h1>
+    </div>
+
+    <div class="tes-container">
+      <div class="tes">
+        <p>Bromo.</p>
+        <h1>
+          Bantu Bromo Agar <br />
+          hijau kembali
+        </h1>
+      </div>
+      <div class="tes">
+        <p>Bromo.</p>
+        <h1>
+          Bantu Bromo Agar <br />
+          hijau kembali
+        </h1>
+      </div>
+    </div>
+
+    <div class="tes-container-small">
+      <div class="tes-small">
+        <p>Bromo.</p>
+        <h1>
+          Bantu Bromo Agar <br />
+          hijau kembali
+        </h1>
+      </div>
+      <div class="tes-small">
+        <p>Bromo.</p>
+        <h1>
+          Bantu Bromo Agar <br />
+          hijau kembali
+        </h1>
+      </div>
+      <div class="tes-small">
+        <p>Bromo.</p>
+        <h1>
+          Bantu Bromo Agar <br />
+          hijau kembali
+        </h1>
+      </div>
+    </div>
+
+    <!-- end -->
+
+    <!-- footer -->
+    <div class="footer">
+      <p>©copy right abid</p>
+    </div>
+
+    <!-- content -->
+
+    <script>
+      $(document).ready(function () {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1200,
+        });
+      });
+
+      function toggleMenu() {
+        var navbar = document.querySelector(".ul-navbar");
+        navbar.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

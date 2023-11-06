@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: sans-serif;
+
+  background: linear-gradient(to bottom, #ffffff00, #173529),
+    url(/wallpaperflare.com_wallpaper.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+  background-color: #173529;
+}
+
+.container-all {
+}
+
+.ul-navbar {
+  display: flex;
+  list-style: none;
+
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.ul-navbar a {
+  font-size: 20px;
+
+  font-family: sans-serif;
+  text-decoration: none;
+
+  margin-left: 25px;
+  color: #494747;
+}
+
+.ul-navbar a:hover {
+  color: #3c7262;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+
+  width: 50px;
+  display: flex;
+}
+
+.profile {
+  width: 45px;
+  position: absolute;
+
+  top: 20px;
+  right: 70px;
+  left: auto;
+}
+
+/* navbar kanan */
+.navbar-kanan {
+  margin-left: auto;
+  margin-right: 75px;
+}
+
+.ul-navbar-kanan {
+  list-style: none;
+  display: flex;
+}
+
+.point a {
+  font-family: fantasy;
+  font-size: 20px;
+
+  color: orangered;
+}
+
+.point a:hover {
+  color: rgb(70, 100, 29);
+}
+
+/* content */
+
+.container-content {
+}
+
+.container-content h1 {
+  font-size: 80px;
+  display: flex;
+  margin-left: 80px;
+  color: whitesmoke;
+}
+
+.paragraph-1 {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph-2 {
+  color: #f7c59f;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-kiri {
+  background-color: whitesmoke;
+  height: 1000px;
+  width: 500px;
+  border-radius: 20px;
+
+  margin-left: 80px;
+  margin-top: 800px;
+  padding: 10px;
+
+  font-size: 20px;
+}
+
+.content-kanan {
+  background-color: whitesmoke;
+  height: 800px;
+  width: 500px;
+  border-radius: 20px;
+
+  margin-right: 80px;
+  margin-left: auto;
+  margin-top: 400px;
+  padding: 10px;
+
+  font-size: 20px;
+}
+
+/* footer */
+.container-footer {
+  margin-top: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+.container-footer p {
+  color: white;
+
+  font-family: fantasy;
+  font-size: 25px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .container-content {
+    background-color: #a3b18a;
+  
+    height: 700px;
+    width: 1800px;
+  
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  
+  .container-content p {
+    height: 500px;
+    width: 700px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
